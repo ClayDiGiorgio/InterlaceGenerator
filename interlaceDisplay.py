@@ -349,10 +349,4 @@ def pathDrawer(gridSize=20, scale=100, unscaledBorderWidth=1, highlightEndpoints
             __drawAbsolutePath(adjCoords, window, scale, unscaledLineWidth, absoluteLineBorderWidth, highlightEndpoints, path=path)
     finally:
         return path
-
-
-def drawWord(word, alphabet, scale=100, unscaledBorderWidth=1, highlightEndpoints=False, unscaledLineWidth=0.8, absoluteLineBorderWidth=1, drawNubs=True, drawLabels=False):
-    path = wordToPath(word, alphabet)
-    drawPath(path, scale=scale, unscaledBorderWidth=unscaledBorderWidth, highlightEndpoints=highlightEndpoints, unscaledLineWidth=unscaledLineWidth, absoluteLineBorderWidth=absoluteLineBorderWidth, drawNubs=drawNubs, drawLabels=drawLabels)
-    
     

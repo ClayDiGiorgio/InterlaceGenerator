@@ -165,7 +165,7 @@ def __joinMany_Backtracking(paths, offsets, currentJoin, i, jCap=100, checkEnd=F
     #
     # base case
     #
-    
+    print(offsets)
     if i == len(paths)-1:
         # support for checkEnd and checkStart
         # if these are both false, this while loop will never trigger

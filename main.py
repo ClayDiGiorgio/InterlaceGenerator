@@ -2,6 +2,8 @@ from interlaceDisplay import pathDrawer
 from interlaceDisplay import drawPath
 from interlaceDisplay import drawWord
 
+from interlace import wordToPath
+
 if __name__ == "__main__":
     # *~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*
     #
@@ -61,6 +63,5 @@ if __name__ == "__main__":
                 '.': 'llllldruuuuu',
                 ',': 'lllllldruuuu'}
     
-    drawPath("ruuuuuullllld")
-    drawWord("welcome", alphabet, scale=30, highlightEndpoints=True)
+    drawPath(wordToPath("hi", alphabet), highlightEndpoints=True)
     
